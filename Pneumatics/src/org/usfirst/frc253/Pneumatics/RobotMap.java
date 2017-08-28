@@ -54,7 +54,7 @@ public class RobotMap {
         
         pneumaticsDoubleSolenoid1 = new DoubleSolenoid(0, 2, 3);
 //        pneumaticsRelaySolenoid = new Relay(4);
-        pneumaticsDoubleSolenoid2 = new DoubleSolenoid(0, 0, 1);
+        pneumaticsDoubleSolenoid2 = new DoubleSolenoid(0, 4, 1);
         
         
 //        LiveWindow.addActuator("Pneumatics", "Double Solenoid 1", pneumaticsDoubleSolenoid1);
