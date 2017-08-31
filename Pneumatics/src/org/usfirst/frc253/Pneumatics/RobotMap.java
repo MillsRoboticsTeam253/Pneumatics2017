@@ -31,6 +31,7 @@ public class RobotMap {
     public static Compressor pneumaticsCompressor1;
     public static DoubleSolenoid pneumaticsDoubleSolenoid1;
     public static DoubleSolenoid pneumaticsDoubleSolenoid2;
+    public static DoubleSolenoid pneumaticsDoubleSolenoid3;
     public static Relay pneumaticsRelaySolenoid;
     
     //Declares Drivetrain Ports
@@ -55,6 +56,8 @@ public class RobotMap {
         pneumaticsDoubleSolenoid1 = new DoubleSolenoid(0, 2, 3);
 //        pneumaticsRelaySolenoid = new Relay(4);
         pneumaticsDoubleSolenoid2 = new DoubleSolenoid(0, 4, 1);
+        
+        pneumaticsDoubleSolenoid3 = new DoubleSolenoid(0, 5, 6);
         
         
 //        LiveWindow.addActuator("Pneumatics", "Double Solenoid 1", pneumaticsDoubleSolenoid1);

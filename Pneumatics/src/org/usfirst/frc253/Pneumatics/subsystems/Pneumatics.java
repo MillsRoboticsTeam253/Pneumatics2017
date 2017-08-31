@@ -34,6 +34,7 @@ public class Pneumatics extends Subsystem {
 //    public final Solenoid doubleSolenoid = RobotMap.pneumaticsDoubleSolenoid1;
     public final DoubleSolenoid doubleSolenoid1 = RobotMap.pneumaticsDoubleSolenoid1;
     public final DoubleSolenoid doubleSolenoid2 = RobotMap.pneumaticsDoubleSolenoid2;
+    public final DoubleSolenoid doubleSolenoid3 = RobotMap.pneumaticsDoubleSolenoid3;
 //    public final Relay relay = RobotMap.pneumaticsRelaySolenoid;
     
     
@@ -56,6 +57,9 @@ public class Pneumatics extends Subsystem {
     	Solenoid2Forward();
     	Solenoid2Reverse();
     	Solenoid2Off();
+    	Solenoid3Forward();
+    	Solenoid3Reverse();
+    	Solenoid3Off();
     }
     public void CompressStart(){
     	compressor.setClosedLoopControl(true);
@@ -88,6 +92,20 @@ public class Pneumatics extends Subsystem {
     public void Solenoid2Off(){
 //    	relay.set(Relay.Value.kOff);
     	doubleSolenoid2.set(DoubleSolenoid.Value.kOff);
+    }
+    public void Solenoid3Forward(){
+//    	relay.set(Relay.Value.kOff);
+    	doubleSolenoid3.set(DoubleSolenoid.Value.kForward);
+    }
+    
+    public void Solenoid3Reverse(){
+//    	relay.set(Relay.Value.kOff);
+    	doubleSolenoid3.set(DoubleSolenoid.Value.kReverse);
+    }
+    
+    public void Solenoid3Off(){
+//    	relay.set(Relay.Value.kOff);
+    	doubleSolenoid3.set(DoubleSolenoid.Value.kOff);
     }
 }
 
